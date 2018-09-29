@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ravi Shankar Kumawat</title>
+    <meta name="author" content="Ravi Shankar Kumawat">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <style>
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+            position: fixed;
+            margin-left: 0%;
+            top: 0;
+            height: 50px;
+            width: 100%;
+        }
+        button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+button:hover {
+    opacity: 0.8;
+}
+
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+        .navbar a:hover {
+            background: #ddd;
+            color: black;
+        }
+
+        .bodycontent {
+            padding: 16px;
+            margin-top: 125px;
+            background-color: rgba(255,0,255,0.1);
+            width: 100%;
+
+        }
+        html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+        body {
+            color:rgba(0,0,0);
+            margin: 0;
+        }
+
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+figcaption, figure, main {
+    display: block;
+}
+
+pre { 
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+
+figure {
+    margin: 1em 40px;
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+audio, video {
+    display: inline-block;
+}
+
+
+article, aside, footer, header, nav, section {
+    display: block;
+}
+        .intro {
+            position: fixed;
+            padding: 10px;
+            top: 50px;
+            width: 91%;
+            float: left;
+            overflow: hidden;
+            height: 80px;
+            background-color:lightslategrey;
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: rgb(255, 255,255,0.3);
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+            
+        }
+
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color:#000;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        #main {
+            transition: margin-left .5s;
+            padding: 16px;
+        }
+
+        .photo_intro {
+            padding: 20px;
+            width: 9%;
+            float: right;
+            margin-left: 90%;
+            position: fixed;
+            margin-top: 6px;
+
+
+        }
+    </style>
+</head>
+
+<body style="background-color: gray;">
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+        <a href="#">About Me</a>
+        <a href="#">Project1</a>
+        <a href="#">Project2</a>
+        <a href="#">Contact</a>
+    </div>
+    <div id="main">
+        <div class="navbar">
+            <a><div style="position:relative">
+                <img src="menuicon.jpg" width="40" height="40" onclick="openNav()"  />
+            </div>
+            </a>
+            <a href="resume.html">Home</a>
+            <a href="https://github.com/raviskumawat">Projects</a>
+            <a href="#contact">Contact</a>
+
+        </div>
+
+
+        <div class="intro">
+            </header>
+
+            <p>
+                <h3> RAVI SHANKAR KUMAWAT</h3> raviskumawat20@gmail.com</p>
+        </div>
+
+
+        <div class="photo_intro">
+            <img src="my_img.jpeg" width="100" height="100" />
+        </div>
+
+
+
+        <div class="bodycontent" name="sec2">
+            <section class="objective">
+                <h4>OBJECTIVE:</h4>
+                <p>Passionate and hardworking student working towards Machine Learning. Aiming to use my knowledge in research
+                    and development of new algorithms to satisfy the data-scientist role at your company</p>
+            </section>
+
+            <section class="education">
+                <h4>EDUCATION:</h4>
+                <table border="4px">
+
+                    <th>COURSE</th>
+                    <th>INSTITUTION</th>
+                    <th>UNIVERSITY/BOARD</th>
+                    <th>YEAR</th>
+                    <th>CGPA</th>
+
+                    <tr>
+                        <td>B.TECH(CSE)</td>
+                        <td>SRMIST</td>
+                        <td>SRM IST</td>
+                        <td>2015-2019</td>
+                        <td>9.5</td>
+
+                    </tr>
+                    <tr>
+                        <td>12
+                            <sup>th</sup>
+                        </td>
+                        <td>DPS</td>
+                        <td>CBSE</td>
+                        <td>2013-2015</td>
+                        <td>87%</td>
+
+                    </tr>
+
+                    <tr>
+                        <td>10
+                            <sup>th</sup>
+                        </td>
+                        <td>Rose Land Public School</td>
+                        <td>CBSE</td>
+                        <td>2012-2013</td>
+                        <td>10</td>
+
+                    </tr>
+                </table>
+            </section>
+            <section>
+                <h4>EXPERIENCE/INTERNSHIPS:</h4>
+                <ol type="1">
+                    <li>
+                        <h6>SkyLim projects & Incubation Hub(SPIH)</h6>
+                        <ol type="i">
+                            <li>Developed an E-commerce Recommendation System</li>
+                        </ol>
+                    </li>
+                    <li>
+                        <h6>Ittiam Systems Pvt. Ltd</h6>
+                        <!-- ADD SCREENSHOTS OF PROJECTS-->
+                        <ol type="i">
+                            <li>Provided Mailing solution which increased the deliverability rates to 99% for the transactional
+                                emails sent by the company</li>
+                            <li>Automated the process of REST API testing with custom scripts and ‘tavern’</li>
+                        </ol>
+                    </li>
+                </ol>
+            </section>
+            <section class="PROJECTS:">
+                <ol type="1">
+                    <li>
+                        <h4>ATM intrusion Detection</h4>
+                        <p>The model identifies an ongoing theft/robbery inside an ATM by analyzing the sounds using machine
+                            learning approaches and send an alert message to the bank and police. Project functionalities
+                        </p>
+                        <ol type="i">
+                            <li>Records audio continuously and analyze each 5-sec segment</li>
+                            <li>Remove the noise using FFT techniques</li>
+                            <li>Train a GMM classifier model(scream, crying, gunshots etc) with ATM sounds</li>
+                            <li>Classify the 5-sec sound using prediction from the trained GMM model.</li>
+                            <li>If the sound is classified as intrusion take following steps:
+                                <ol type="a">
+                                    <li>
+                                        Starts recording the video
+                                    </li>
+                                    <li>Sends an alert to bank with the live stream video of ATM and provide an option to inform
+                                        Police. </li>
+                                </ol>
+
+                            </li>
+                            <h6>Ongoing improvements: </h6>
+                            <p>Provide a web-UI implementation and use the video camera for Posture detection of people inside
+                                ATM.</p>
+                        </ol>
+                    </li>
+                    <li>
+                        <h4>Mailing service development</h4>
+                        <p></p>
+                        <ol type="i">
+                            <li></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <h4>REST API Testing Automation:</h4>
+                        <p></p>
+                        <ol type="i">
+                            <li></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <h4>E-commerce Recommendation system </h4>
+                        <p></p>
+                        <ol type="i">
+                            <li></li>
+                        </ol>
+                    </li>
+                    <li>
+                        <h4>Low-High Image Resolution Conversion</h4>
+                        <p></p>
+                        <ol type="i">
+                            <li></li>
+                        </ol>
+                    </li>
+                </ol>
+            </section>
+
+            <section class="pro">
+                <h4>PROFESSIONAL PROFICIENCY:</h4>
+                <ol type="1">
+                    <li>
+                        <h4>
+                            Pursuing research project on language-independent UNICODE text recognition
+                        </h4>
+
+                    </li>
+                    <li>
+                        <h4>Online courses:</h4>
+                        <ol type="i">
+                            <li>Machine Learning (Coursera, Standford University, Beginner level).</li>
+                        </ol>
+                    </li>
+                </ol>
+            </section>
+
+            <section class="accolades">
+                <h4>ACCOLADES:</h4>
+                <ol type="1">
+                    <li>Received a scholarship award of Rs.20,000/- based on academic performance in SRM IST(2017).</li>
+                </ol>
+            </section>
+
+            <section class="extra">
+                <h4>DONE FOR FUN:</h4>
+                 <ol type="1">
+
+                    <li>Hacking</li>
+                </ol>
+            </section>
+
+            <section class="tech_skills">
+                <h4>PROFESSIONAL PROFICIENCY:</h4>
+                <ol type="1">
+                    <li>C++ Show a graphical percentage bar</li>
+                </ol>
+            </section>
+
+            <section type="personal_skills">
+                <h4>PERSONAL SKILLS:</h4>
+                <ol type="1">
+                    <li>Honesty</li>
+                </ol>
+            </section>
+
+            <section class="dossier">
+                <h4>PERSONAL DOSSIER:</h4>
+                <ul type="bullet">
+                    <li> Date Of BIRTH : 20-October-1997</li>
+                </ul>
+            </section>
+
+            <section class="linguistics">
+                <h4>LINGUISTIC SKILLS:</h4>
+                <ul type="bullet">
+                    <li>English (Checkbox foe read, write and speak)</li>
+                </ul>
+            </section>
+
+            <section class="hobbies">
+                <h4>HOBBIES:</h4>
+                <ul type="bullet">
+                    <li>Reading Comics</li>
+                </ul>
+            </section>
+            <aside>
+                <h4>Video Profile:</h4>
+                <video src="video_profile.mp4" controls width="400" height="400"></video>
+            </aside>
+            <footer>
+                <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Contact Me</button>
+
+                <p>Profile Baaar for twitter facebook, LinkediN</p>
+
+                <p>Coyright Info</p>
+                
+            </footer>
+        </div>
+    </div>
+    
+
+      <div id="id01" class="modal">
+  
+            <form class="modal-content animate" action="./email.php">
+              <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <img src="my_img.jpeg" alt="Avatar" class="avatar" height="200" width="200">
+              </div>
+          
+              <div class="container">
+                  <label for="email_id"><b>Kindly Enter Your Email Id:</b></label>
+                    <input type="email" name="email_id"></input>
+                    <hr>
+                    <label for="query"><b>Kindly Enter Your Query:  </b></label>
+                    <input type="text" name="query"></input>
+                    <hr>
+                    <button type="submit">Submit</button>
+              </div>
+          
+                
+              </div>
+            </form>
+          </div>
+          
+
+
+    </div>
+</body>
+
+</html>
